@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>ペンギン -Penguin-</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="favicon.ico">
+</head>
+
+<body translate="no">
+<div id="wrap">
+<a href="#" class="hb" style="transform: translate3d(-913px, 0px, 0px);">
+<div class="c">
+<img src="img/001.jpg" alt="">
+<div class="txt">
+<h1>ジェンツーペンギン -Pygoscelis papua-</h1>
+<p>頭部と背中側が黒く、腹側は白、足はピンク色または橙色をしている。特徴は頭頂部を通って両目をつなぐ白い帯模様とくちばしの両側の赤色または橙色である。同じアデリーペンギン属のアデリーペンギン、ヒゲペンギンと同様に尾羽が長い。虹彩は茶色。</p>
+</div>
+</div>
+</a>
+<div class="fullBg">
+<img src="img/001.jpg" alt="">
+</div>
+<a href="#" class="hb" style="transform: translate3d(-913px, 0px, 0px);">
+<div class="c">
+<img src="img/002.jpg" alt="">
+<div class="txt">
+<h1>コウテイペンギン -Aptenodytes forsteri-</h1>
+<p>現生のペンギン目内では最大種。頭部とフリッパーの外側の羽色は黒、上胸は黄色。腹部やフリッパーの内側は白色。側頭部の耳の周辺は橙色。下嘴に黄色やピンク色の筋模様が入る。後肢にはピンク色の斑紋が入る個体もいる。下のくちばしの根もとには嘴鞘という部分があり、ここも黄色をしている。</p>
+</div>
+</div>
+</a>
+<div class="fullBg">
+<img src="img/002.jpg" alt="">
+</div>
+<a href="#" class="hb" style="transform: translate3d(-913px, 0px, 0px);">
+<div class="c">
+<img src="img/003.jpg" alt="">
+<div class="txt">
+<h1>ケープペンギン -Spheniscus demersus-</h1>
+<p>胸のラインが１本で細く、同時に顔の白い部分が多いという点が、ケープペンギン属の中でケープペンギンを見分ける目安。ロバに似た鳴き声を持つため、オスのロバを意味するジャッカスペンギンと呼ばれ、フンボルトペンギンやマゼランペンギンも同様にジャッカスペンギンと呼ばれることがある。
+</div>
+</div>
+</a>
+<div class="fullBg">
+<img src="img/003.jpg" alt="">
+</div>
+<a href="#" class="hb" style="transform: translate3d(-913px, 0px, 0px);">
+<div class="c">
+<img src="img/004.jpg" alt="">
+<div class="txt">
+<h1>イワトビペンギン -Eudyptes chrysocome-</h1>
+<p>成鳥の目の上には眉のような黄色の羽毛があるのが大きな特徴である。これはマカロニペンギンなどにも見られるが、イワトビペンギンは目の後ろで大きく広がる飾り羽になっている。この飾り羽とともに頭部の羽毛も長く伸び、特徴的な冠羽を形成している。目とくちばしが赤く、足はピンク色をしている。</p>
+</div>
+</div>
+</a>
+<div class="fullBg">
+<img src="img/004.jpg" alt="">
+</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script id="rendered-js">
+$(document).ready(function () {
+var docWidth = $('body').width(),
+$wrap = $('#wrap'),
+$images = $('#wrap .hb'),
+slidesWidth = $wrap.width();
+$(window).on('resize', function () {
+docWidth = $('body').width();
+slidesWidth = $wrap.width();
+});
+
+$(document).mousemove(function (e) {
+var mouseX = e.pageX,
+offset = mouseX / docWidth * slidesWidth - mouseX / 2;
+$images.css({
+'-webkit-transform': 'translate3d(' + -offset + 'px,0,0)',
+'transform': 'translate3d(' + -offset + 'px,0,0)' });
+});
+});
+
+</script>
+
+</body>
+
+</html>
